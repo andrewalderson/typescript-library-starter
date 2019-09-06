@@ -1,0 +1,10 @@
+{
+  "name": "tslibrary",
+  "version": "1.0.0",
+  "description": "Base setup for a TypeScript library project",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Andrew Alderson",
+  "license": "MIT"
+}
