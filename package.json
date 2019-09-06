@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Base setup for a TypeScript library project",
   "main": "./dist/bundles/index.umd.js",
+  "module": "./dist/es2015/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "tsc && tsc --target es2018 --outDir dist/esm2015",
+    "build": "tsc && tsc --target es2018 --outDir dist/esm2015 && rollup -c",
     "build:dev": "npm run build -- -w"
   },
   "author": "Andrew Alderson",
@@ -21,6 +22,10 @@
     "eslint-plugin-prettier": "^3.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "rollup": "^1.20.3",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-typescript2": "^0.24.0",
     "ts-jest": "^24.0.2",
     "tslib": "^1.10.0",
     "typescript": "^3.6.2"
