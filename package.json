@@ -2,10 +2,13 @@
   "name": "tslibrary",
   "version": "1.0.0",
   "description": "Base setup for a TypeScript library project",
-  "main": "index.js",
+  "main": "./dist/bundles/index.umd.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "tsc && tsc --target es2018 --outDir dist/esm2015",
+    "build:dev": "npm run build -- -w"
   },
   "author": "Andrew Alderson",
   "license": "MIT",
