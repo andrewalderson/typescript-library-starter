@@ -23,8 +23,16 @@
       "git add"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewalderson/typescript-library-starter.git"
+  },
   "author": "Andrew Alderson",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewalderson/typescript-library-starter/issues"
+  },
+  "homepage": "https://github.com/andrewalderson/typescript-library-starter#readme",
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@typescript-eslint/eslint-plugin": "^2.1.0",
