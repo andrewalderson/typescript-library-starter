@@ -9,7 +9,7 @@ module.exports = {
     parserOptions: {
       project: './tsconfig.json',
       ecmaVersion: 2018,
-      sourceType: 'module',
+      sourceType: 'module'
     },
     rules: {
       // Special ESLint rules or overrides go here.

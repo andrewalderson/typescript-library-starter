@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "linkprojects": "cd ../ && npm link && cd ./examples && npm link tslibrary",
+    "build": "npm run linkprojects && webpack",
+    "build:dev": "npm run build -- -w",
+    "start": "npx lite-server"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
